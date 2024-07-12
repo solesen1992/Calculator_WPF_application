@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:Calculator_WPF_application"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Width="800" Height="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="338*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="393*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tbTal1" HorizontalAlignment="Left" Margin="158,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Grid.Column="3" Grid.Row="1" Height="18"/>
+        <TextBox x:Name="tbTal2" HorizontalAlignment="Left" Margin="158,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Grid.Column="3" Grid.Row="2" Height="18"/>
+        <TextBox x:Name="tbResultat" HorizontalAlignment="Left" Margin="188,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Column="3" Grid.Row="2" Height="18"/>
+        <Button x:Name="btn_Plus" Content="Plus" HorizontalAlignment="Left" Margin="109,55,0,0" VerticalAlignment="Top" Width="60" Grid.Column="3" Grid.Row="2" Height="20" Click="btn_Plus_Click"/>
+        <Button x:Name="btn_Minus" Content="Minus" HorizontalAlignment="Left" Margin="188,55,0,0" VerticalAlignment="Top" Width="60" Grid.Column="3" Grid.Row="2" Height="20" Click="btn_Minus_Click"/>
+        <Button x:Name="btn_Gange" Content="Gange" HorizontalAlignment="Left" Margin="109,96,0,0" VerticalAlignment="Top" Width="60" Grid.Column="3" Grid.Row="2" Height="20" Click="btn_Gange_Click"/>
+        <Button x:Name="btn_Divider" Content="Divider" HorizontalAlignment="Left" Margin="188,96,0,0" VerticalAlignment="Top" Width="60" Grid.Column="3" Grid.Row="2" Height="20" Click="btn_Divider_Click"/>
+        <Label x:Name="lommeregnerText" Grid.Column="3" Content="Lommeregner" HorizontalAlignment="Left" Margin="102,14,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="number1Text" Grid.Column="3" Content="Tal 1" HorizontalAlignment="Left" Margin="104,55,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Grid.RowSpan="2" Width="65" FontSize="14"/>
+        <Label x:Name="number2Text" Grid.Column="3" Content="Tal 2" HorizontalAlignment="Left" Margin="104,6,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="resultText" Grid.Column="3" Content="Resultat" HorizontalAlignment="Left" Margin="104,133,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
     </Grid>
 </Window>
